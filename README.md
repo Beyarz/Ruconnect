@@ -11,7 +11,11 @@ Start host: `ruby host.rb`
 
 ## Usage (daemon)
 
+![Starting client as background worker](start-client.gif)
+
 Start client as background worker: `ruby daemon.rb start`
+
+![Stopping client background worker](stop-client.gif)
 
 Stop client background worker: `ruby daemon.rb stop`
 
