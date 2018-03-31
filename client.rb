@@ -40,8 +40,10 @@ while loop == true do
 			inbound = TCPSocket.new host, port
 			puts "[!] Connected to host!"
 			rescue Errno::ECONNREFUSED
-			loop = false
+			loop = true
 			puts "[-] Failed to establish connection."
+			puts "    Will try again soon."
+			sleep(5)
 		end
 		iterating = true
 		array = [recip = nil, recport = nil, command = nil, id = nil]

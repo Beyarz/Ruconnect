@@ -8,3 +8,13 @@ Start client: `ruby client.rb`
 Start host: `ruby host.rb`
 
 **NOTE**: You need to start the host before you can start clients.
+
+## Usage (daemon)
+
+Start client as background worker: `ruby daemon.rb start`
+
+Stop client background worker: `ruby daemon.rb stop`
+
+Start host: `ruby host.rb`
+
+**NOTE**: Client(s) will continue searching for a host until one is found.
