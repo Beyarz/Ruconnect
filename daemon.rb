@@ -9,7 +9,7 @@
 # # # #
 
 # # #
-# Name: start-client.rb
+# Name: daemon.rb
 # #
 
 raise '[!] Must be run as root' unless Process.uid == 0
