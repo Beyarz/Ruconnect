@@ -3,6 +3,7 @@ A handy tool made to control multiple devices one at the time using the terminal
 
 ## Usage
 Start client: `ruby client.rb`
+
 Start host: `ruby host.rb`
 
 **NOTE**: You need to start the host before you can start clients.
