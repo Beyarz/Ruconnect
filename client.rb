@@ -4,7 +4,7 @@
 
 # # # # # #
 # Created Mars 29th 2018
-# Copyright (c) 2018 Beyar N.
+# Copyright (c) 2018 Beyar.
 # # # #
 
 # # #
